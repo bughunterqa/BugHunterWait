@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BugHunterWait</id>
+    <version>1.0.0</version>
+    <authors>bughunterqa</authors>
+    <owners>bughunterqa</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wait class</description>
+    <tags>wait</tags>
+  </metadata>
+</package>
