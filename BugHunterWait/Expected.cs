@@ -4,7 +4,7 @@ namespace BugHunterWait
 {
     public class Expected
     {
-        private static Func<IWebDriver, IWebElement> ElementIsVisible(IWebElement element)
+        public static Func<IWebDriver, IWebElement> ElementIsVisible(IWebElement element)
         {
             return delegate (IWebDriver driver)
             {
@@ -25,7 +25,7 @@ namespace BugHunterWait
             };
         }
 
-        private static Func<IWebDriver, IWebElement> ElementIsInvisible(IWebElement element)
+        public static Func<IWebDriver, IWebElement> ElementIsInvisible(IWebElement element)
         {
             return (driver) =>
             {
