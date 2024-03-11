@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>BugHunterWait</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <authors>bughunterqa</authors>
     <owners>bughunterqa</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
