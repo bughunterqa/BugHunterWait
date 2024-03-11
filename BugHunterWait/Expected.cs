@@ -4,6 +4,7 @@ namespace BugHunterWait
 {
     public class Expected
     {
+        // Wait until visible
         public static Func<IWebDriver, IWebElement> ElementIsVisible(IWebElement element)
         {
             return delegate (IWebDriver driver)
