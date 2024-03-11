@@ -46,5 +46,47 @@ namespace BugHunterWait
                 }
             };
         }
+
+        public static Func<IWebDriver, IWebElement> ElementTextIsEqualTo(IWebElement element, string value)
+        {
+            return delegate (IWebDriver driver)
+            {
+
+                try
+                {
+                    if (element != null && element.Displayed && element.Text.Contains(value))
+                    {
+                        return element;
+                    }
+
+                    return null;
+                }
+                catch (StaleElementReferenceException)
+                {
+                    return null;
+                }
+            };
+        }
+
+        public static Func<IWebDriver, IWebElement> ElementValueIsEqualTo(IWebElement element, string value)
+        {
+            return delegate (IWebDriver driver)
+            {
+
+                try
+                {
+                    if (element != null && element.Displayed && element.GetAttribute("value").Contains(value))
+                    {
+                        return element;
+                    }
+
+                    return null;
+                }
+                catch (StaleElementReferenceException)
+                {
+                    return null;
+                }
+            };
+        }
     }
 }
